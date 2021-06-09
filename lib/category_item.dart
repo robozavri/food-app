@@ -12,7 +12,13 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      child: Text(title),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: 20.0,
+          color: Colors.yellow,
+        ),
+      ),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [color.withOpacity(0.7), color],
